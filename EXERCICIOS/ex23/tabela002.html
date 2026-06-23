@@ -29,6 +29,15 @@ td.num{
   text-align: right;
 }
 
+caption{
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgrey;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px;
+}
+
 
     </style>
 </head>
@@ -37,11 +46,13 @@ td.num{
 
 <table>
 
+<caption>populacao das unidades federativas</caption>
+
 <thead>
 <tr>
 
-    <th>estado</th>
-    <th>populacao</th>
+    <th scope="col">estado</th>
+    <th scope="col" style="width: 100px;">populacao</th>
 
 </tr>
 </thead>
@@ -190,7 +201,7 @@ td.num{
 <tfoot>
 
 <tr>
-    <th>total de habitantes</th>
+    <th scope="rowgroup">total de habitantes</th>
     <td class="num"><strong>213 421 037</strong></td>
 </tr>
 
