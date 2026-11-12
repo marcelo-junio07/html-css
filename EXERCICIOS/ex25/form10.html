@@ -10,12 +10,12 @@
 
 
         <p><label for="iano">em que ano voce nasceu?</label>
-        <input type="number" name="ano" id="iano" max="2020" min="1900" value="2000">
+        <input type="number" name="ano" id="iano" max="2026" min="1900" value="" oninput="resul.innerHTML = 2026-Number(iano.value)">
 </p>
 
 <p>
     <label for="iidade">sua idade e?</label>
-    <output id="idade">0</output>
+    <output id="resul">0</output>
 </p>
 
         <input type="submit" value="Enviar">
